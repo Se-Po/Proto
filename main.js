@@ -1,4 +1,5 @@
 /*==================== toggle icon navbar ====================*/
+// 55:00
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -20,7 +21,9 @@ window.onscroll = () => {
       }
    });
    /*==================== sticky navbar ====================*/
-   // 50:00
+   let header = document.querySelector('header');
+
+   header.classList.toggle('sticky', window.scrollY > 100)
 };
 
 /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
